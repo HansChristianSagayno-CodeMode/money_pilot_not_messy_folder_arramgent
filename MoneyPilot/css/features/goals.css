@@ -1,0 +1,9 @@
+/* css/features/goals.css */
+/* --- Goal Icons --- */
+.goal-icons-grid { display: flex; gap: 10px; margin-bottom: 1rem; justify-content: center; }
+.goal-radio { display: none; }
+.goal-icon-label { 
+    width: 45px; height: 45px; border-radius: 50%; background: var(--bg-body); border: 2px solid transparent;
+    display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.1rem; color: var(--text-muted); transition: 0.2s;
+}
+.goal-radio:checked + .goal-icon-label { border-color: var(--primary); background: var(--primary-light); color: var(--primary); transform: scale(1.1); }

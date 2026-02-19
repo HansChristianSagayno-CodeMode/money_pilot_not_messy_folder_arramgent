@@ -1,0 +1,40 @@
+/* css/features/savings.css */
+.planner-stat-card {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white; padding: 2rem; border-radius: 20px;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+}
+.planner-stat-card::before {
+    content: '';
+    position: absolute; top: -50%; right: -20%; width: 200px; height: 200px;
+    background: rgba(255,255,255,0.1); border-radius: 50%;
+}
+.planner-list-item {
+    background: var(--bg-card);
+    border-radius: 12px; padding: 15px;
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 10px; border: 1px solid var(--border);
+    transition: 0.2s;
+}
+.planner-list-item:hover { transform: translateY(-2px); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.planner-input {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white; padding: 8px 12px; border-radius: 8px; margin-top: 5px;
+}
+.planner-input::placeholder { color: rgba(255,255,255,0.7); }
+.planner-input option { color: var(--text-main); }
+.planner-chart-container {
+    display: flex; align-items: center; justify-content: center; height: 200px; position: relative;
+}
+.planner-donut {
+    width: 160px; height: 160px; border-radius: 50%;
+    background: conic-gradient(var(--border) 0% 100%); position: relative;
+}
+.planner-donut-hole {
+    width: 120px; height: 120px; background: var(--bg-card);
+    border-radius: 50%; position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+}
